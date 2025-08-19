@@ -1,0 +1,66 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll behavior (fallback) */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/a0aec0/ffffff?text=Klinik+Modern');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+
+.section-title {
+    border-left: 4px solid #0d6efd;
+    padding-left: 1rem;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.doctor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.service-card .icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+/* --- EFEK HOVER BARU --- */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.15)!important;
+}
+
+.doctor-card {
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    transition: color 0.2s ease-in-out;
+}
